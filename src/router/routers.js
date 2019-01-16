@@ -126,6 +126,24 @@ export default [
         component: () => import('@/view/components/drag-list/drag-list.vue')
       },
       {
+        path: 'drag_drawer_page',
+        name: 'drag_drawer_page',
+        meta: {
+          icon: 'md-list',
+          title: '可拖拽抽屉'
+        },
+        component: () => import('@/view/components/drag-drawer')
+      },
+      {
+        path: 'org_tree_page',
+        name: 'org_tree_page',
+        meta: {
+          icon: 'ios-people',
+          title: '组织结构树'
+        },
+        component: () => import('@/view/components/org-tree')
+      },
+      {
         path: 'tree_table_page',
         name: 'tree_table_page',
         meta: {
@@ -381,7 +399,16 @@ export default [
               icon: 'md-funnel',
               title: '三级'
             },
-            component: () => import('@/view/multilevel/level-2-2/level-3-1.vue')
+            component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+          },
+          {
+            path: 'level_2_2_2',
+            name: 'level_2_2_2',
+            meta: {
+              icon: 'md-funnel',
+              title: '三级'
+            },
+            component: () => import('@/view/multilevel/level-2-2/level-2-2-2.vue')
           }
         ]
       },
